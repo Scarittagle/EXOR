@@ -28,3 +28,9 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## DEMO Pictures
+
+![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012731.png)
+![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012747.png)
+![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012801.png)
