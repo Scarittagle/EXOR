@@ -10,6 +10,8 @@ So the design of this app will not be pretty (not an arts student), but I will t
 02/08/2018:
 I uploaded the initial build, only Login interface is finished, right now the app can connect to Google Firebase for storing data and User Authentication.... basic stuff.
 
+Having trouble to hosting it via Firebase.... will update more once solved.
+
 
 
 ## Build Setup
