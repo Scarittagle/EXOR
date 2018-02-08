@@ -1,6 +1,6 @@
 {
-  "name": "contact_form_project",
-  "description": "A simple contact form that utilize VueJS and Firebase",
+  "name": "exor_express_order_project",
+  "description": "User can use this simple web app to checkout upon ordering foods in the resturant",
   "version": "1.0.0",
   "author": "Travis Su",
   "license": "MIT",
@@ -10,8 +10,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "firebase": "^4.9.0",
-    "vue": "^2.5.11"
+    "aws-sdk": "^2.190.0",
+    "firebase": "^4.9.1",
+    "vue": "^2.5.11",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "browserslist": [
     "> 1%",

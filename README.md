@@ -1,6 +1,6 @@
-# contact_form_project
+# exor_express_order_project
 
-> A simple contact form that utilize VueJS and Firebase
+> User can use this simple web app to checkout upon ordering foods in the resturant
 
 ## Build Setup
 

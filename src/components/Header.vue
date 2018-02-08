@@ -1,0 +1,50 @@
+<template>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+        <a to="/" class="navbar-brand"><img style="max-width:100px; margin-top: -7px;"
+                                              src="../assets/LOGO_transparent.png"></a>
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+          <router-link to="/login"><login-button v-if="this.$store.state.isStaffPage == false"></login-button></router-link>
+          <add-staff-button v-if="this.$store.state.isStaffPage == true" @click.native="addStaffMember"></add-staff-button>
+          <log-out-button v-if="this.$store.state.isStaffPage == true"></log-out-button>
+        </ul>
+      </nav>
+    </header>
+</template>
+
+<script>
+  import LoginButton from './Buttons/LoginButton'
+  import AddStaffButton from './Buttons/AddStaffButton'
+  import LogoutButton from './Buttons/LogoutButton'
+  import LoginPage from './LoginPage.vue'
+  import { dbStaffRef} from "../firebaseConfig";
+
+  export default {
+    data(){
+      return{
+        newStaff:{
+          name: 'travis',
+          pin: '123'
+        },
+        dontshow: true,
+      }
+    },
+    components:{
+      LoginPage,
+      loginButton: LoginButton,
+      addStaffButton: AddStaffButton,
+      logOutButton: LogoutButton
+    },
+    methods:{
+      addStaffMember(){
+        dbStaffRef.push(this.newStaff);
+      }
+    }
+
+  }
+
+</script>
+
+
