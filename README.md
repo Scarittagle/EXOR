@@ -5,7 +5,12 @@ I build this project not only wanted to challenge myself for building a real-wor
 
 So the design of this app will not be pretty (not an arts student), but I will try to make it EASY to USE.
 
+The App is currently hosted by Google Firebase, Demo URL: https://exor-ffdab.firebaseapp.com/#/
+
 ## Current Progess: In Development
+
+02/09/2018：
+Hosting Successful, link available now.
 
 02/08/2018:
 I uploaded the initial build, only Login interface is finished, right now the app can connect to Google Firebase for storing data and User Authentication.... basic stuff.
