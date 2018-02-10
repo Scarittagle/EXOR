@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 import Login from './components/LoginPage.vue'
 import StaffHome from './components/StaffHome'
+import ContactForm from './components/ContactForm'
 
 import { store } from './PageState/pageState'
 
@@ -17,6 +18,9 @@ const routes = [
   },
   {
   path:'/', component: Home
+  },
+  {
+    path:'/contact', component: ContactForm
   },
   {
     path:'/login', component: Login
@@ -42,7 +46,6 @@ router.beforeEach((to, from, next) => {
   }
   else if (!requiresAuth && currentUser){
     next('/staffhome');
-    this.$store.state.isStaffPage = true;
   }
   else next()
 })

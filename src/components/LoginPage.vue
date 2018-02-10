@@ -9,7 +9,7 @@
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
             <span>
-              <p>To acquire a account, Please contact with the creater.</p>
+              <p>To acquire a account, Please contact with the Developer.</p>
             </span>
             <button class="btn btn-lg btn-outline-success btn-block" type="submit" @click="logIn">Log In</button>
             <p color="red">{{errMsg}}</p>

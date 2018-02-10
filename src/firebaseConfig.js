@@ -11,3 +11,4 @@ var config = {
 const firebaseApp = Firebase.initializeApp(config);
 const db = firebaseApp.database();
 export const dbStaffRef = db.ref('Staff');
+export const dbContactFormRef = db.ref('Account Inquiry');
