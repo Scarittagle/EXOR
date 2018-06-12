@@ -1,23 +1,6 @@
-# EXOR - Web-based Express Restaurant Ordering App
+# exor_express_order
 
-From Author: 
-I build this project not only wanted to challenge myself for building a real-world web-app also a chance to practicing my VueJS Skills.
-
-So the design of this app will not be pretty (not an arts student), but I will try to make it EASY to USE.
-
-The App is currently hosted by Google Firebase, Demo URL: https://exor-ffdab.firebaseapp.com/#/
-
-## Current Progess: In Development
-
-02/09/2018：
-Hosting Successful, link available now.
-
-02/08/2018:
-I uploaded the initial build, only Login interface is finished, right now the app can connect to Google Firebase for storing data and User Authentication.... basic stuff.
-
-Having trouble to hosting it via Firebase.... will update more once solved.
-
-
+> A Vue.js project
 
 ## Build Setup
 
@@ -30,12 +13,9 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## DEMO Pictures
-
-![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012731.png)
-![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012747.png)
-![alt text](https://github.com/Scarittagle/EXOR/blob/master/Demo%20Pics/WeChat%20Screenshot_20180208012801.png)
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

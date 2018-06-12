@@ -1,71 +1,20 @@
-import Firebase from 'firebase'
-import Vue from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
-import Home from './components/Home.vue'
-import Login from './components/LoginPage.vue'
-import StaffHome from './components/StaffHome'
-import ContactForm from './components/ContactForm'
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue';
+import App from './App';
+import Buefy from 'buefy'; //eslint-disable-line
+import router from './router';
+import store from './store/index';
 
-import { store } from './PageState/pageState'
+Vue.config.productionTip = false;
 
-//Vue-Router to redirect the pages
-Vue.use(VueRouter)
+Vue.use(Buefy, { defaultIconPack: 'fas' });
 
-const routes = [
-  {
-    path:'*', redirect:'/'
-  },
-  {
-  path:'/', component: Home
-  },
-  {
-    path:'/contact', component: ContactForm
-  },
-  {
-    path:'/login', component: Login
-  },
-  {
-    path:'/staffhome', component: StaffHome, meta:{
-    requiresAuth: true
-    }
-  }
-]
-
-const router = new VueRouter({
-  routes
-})
-
-//Check Auth User to access the secured page.
-router.beforeEach((to, from, next) => {
-  let currentUser = Firebase.auth().currentUser;
-  let requiresAuth = to.matched.some(record => record.meta.requiresAuth);
-
-  if(requiresAuth && !currentUser){
-    next('/');
-  }
-  else if (!requiresAuth && currentUser){
-    next('/staffhome');
-  }
-  else next()
-})
-
-//
-Firebase.auth().onAuthStateChanged(function(user){
-  if(!app){
-    app = new Vue({
-      el: '#app',
-      template: '<App/>',
-      components: { App },
-      router
-    })
-  }
-})
-
-//Base
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  store,
   router,
-  render: h => h(App)
-})
+  store,
+  components: { App },
+  template: '<App/>',
+});

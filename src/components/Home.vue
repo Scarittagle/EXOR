@@ -1,34 +1,34 @@
 <template>
-  <div class="container">
-    <div id="home" class="col-sm-12 text-center">
-      <div class="background">
-        <h1>Welcome to EXOR</h1>
-        <h2>Your Web-base Restaurant POS Solution.</h2>
+  <div>
+    <div class="containter has-text-centered">
+      <div class="hero is-medium">
+        <div class="hero-body">
+          <h1 class="title">Home Page under construction</h1>
+          <p>Work on progress...</p>
+        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-
+  // import Dashboard from './main/Dashboard';
+  // import Approval from './main/Approval';
+  // export default {
+  //   components: {
+  //     'app-dashboard': Dashboard,
+  //     'app-approval': Approval,
+  //   },
+  //   data() {
+  //     return {
+  //       loading: true,
+  //       activeTab: 'dashboard',
+  //     };
+  //   },
+  //   methods: {
+  //     tabClicked(tab) {
+  //       this.activeTab = tab;
+  //     },
+  //   },
+  // };
 </script>
-
-<style scoped>
-  #home {
-    background: url('../../src/assets/Restaurant-POS.jpg');
-    height: 600px;
-    padding: 10%;
-  }
-  h1,h2{
-    margin: 3%;
-  }
-
-  .background{
-    background: #eee;
-    opacity: 0.8;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-</style>

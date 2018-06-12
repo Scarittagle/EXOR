@@ -1,29 +1,40 @@
 <template>
   <div id="app">
-    <div class="container">
-      <exor-header></exor-header>
-    </div>
-    <div class="container">
-      <router-view></router-view>
-    </div>
-    <div class="container">
-      <exor-footer></exor-footer>
-    </div>
+    <app-navbar/>
+    <app-notifications/>
+    <section
+      id="section"
+      class="section">
+      <div class="container">
+        <router-view/>
+      </div>
+    </section>
+    <app-footer/>
   </div>
 </template>
 
 <script>
-  import Header from './components/Header.vue'
-  import Footer from './components/Footer.vue'
-
-export default {
-    components:{
-      exorHeader: Header,
-      exorFooter: Footer
-    }
-}
+  import Navbar from './components/layout/Navbar';
+  import Notifications from './components/layout/Notification';
+  import Footer from './components/layout/Footer';
+  export default {
+    name: 'App',
+    components: {
+      'app-navbar': Navbar,
+      'app-notifications': Notifications,
+      'app-footer': Footer,
+    },
+  };
 </script>
 
-<style>
-
+<style lang="sass">
+  @import "~bulma"
+  @import "~buefy/src/scss/buefy"
+  #app
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  #section
+    min-height: 75vh;
 </style>
