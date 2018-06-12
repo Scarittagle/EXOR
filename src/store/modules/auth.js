@@ -75,6 +75,7 @@ const actions = {
   logOut(context) {
     context.commit('logUserOut');
     Firebase.auth().signOut().then(() =>{
+      context.dispatch('createNotification', { message: 'You have been logged out.', success: false, toast: true });
       router.push('/login');
     }).catch((error) => {
       this.$store.dispatch('createNotification', { message: error.message });

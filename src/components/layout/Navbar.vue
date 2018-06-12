@@ -63,7 +63,6 @@ export default {
     },
     logout() {
       this.$store.dispatch('logOut');
-      this.$store.dispatch('createNotification', { message: 'You have been logged out.', success: false, toast: true });
     }
   },
 };
