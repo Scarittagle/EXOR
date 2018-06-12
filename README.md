@@ -1,6 +1,20 @@
-# exor_express_order
+# EXOR - Express Order - FrontEnd
 
 > A Vue.js project
+
+# Technology Used
+Frameworks
+
+VueJS - Progressive Framework
+
+Vue Router - Router for Vue
+
+Vuex - VueJS Central State Management
+
+Vuex-PersistedState - Vuex plugin for Persist information in browser storage
+
+
+
 
 Demo: https://exor-ffdab.firebaseapp.com/login
 
