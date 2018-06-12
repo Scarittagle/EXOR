@@ -6,19 +6,25 @@
 **Frameworks**
 
 VueJS - Progressive Framework
+
 Vue Router - Router for Vue
+
 Vuex - VueJS Central State Management
+
 Vuex-PersistedState - Vuex plugin for Persist information in browser storage
 
 **Linting**
 
 ESLint - linting plugin for ES6 Javascript
+
 ESLintVue - ESLint for VueJS
 
 **Library**
 
 Bulma - CSS Styling Library
+
 Buefy - Styling Library for VueJS
+
 Fontawesome5 - Icon library for Buefy and Bulma
 
 **Authentication Service**
