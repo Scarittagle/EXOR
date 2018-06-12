@@ -1,34 +1,32 @@
 <template>
   <div>
-    <div class="containter has-text-centered">
-      <div class="hero is-medium">
-        <div class="hero-body">
-          <h1 class="title">Home Page under construction</h1>
-          <p>Work on progress...</p>
-        </div>
+    <div class="columns">
+      <div class="column">
+        <h1 class="title is-pulled-left">DASHBOARD</h1>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <hr>
+        Work in progress....
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  // import Dashboard from './main/Dashboard';
-  // import Approval from './main/Approval';
-  // export default {
-  //   components: {
-  //     'app-dashboard': Dashboard,
-  //     'app-approval': Approval,
-  //   },
-  //   data() {
-  //     return {
-  //       loading: true,
-  //       activeTab: 'dashboard',
-  //     };
-  //   },
-  //   methods: {
-  //     tabClicked(tab) {
-  //       this.activeTab = tab;
-  //     },
-  //   },
-  // };
+// import Approval from './main/Approval';
+export default {
+  components: {
+    // 'app-dashboard': Dashboard,
+    // 'app-approval': Approval,
+  },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  methods: {
+  },
+};
 </script>
