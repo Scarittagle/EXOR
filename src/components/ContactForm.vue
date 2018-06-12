@@ -4,6 +4,11 @@
       <div class="content">
         <div class="hero is-medium">
           <div class="hero-body">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">Inquiry Form</h1>
+              </div>
+            </div>
             <b-field label="Name">
               <b-input v-model="contactForm.name"></b-input>
             </b-field>
@@ -33,8 +38,10 @@
 
 <script>
 import {dbContactFormRef} from "../store/modules/auth.js";
+import BField from "buefy/src/components/field/Field";
 
 export default {
+  components: {BField},
   data(){
     return{
       isError: false,
