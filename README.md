@@ -2,19 +2,27 @@
 
 > A Vue.js project
 
-# Technology Used
-Frameworks
+## Technology Used
+####Frameworks
 
 VueJS - Progressive Framework
-
 Vue Router - Router for Vue
-
 Vuex - VueJS Central State Management
-
 Vuex-PersistedState - Vuex plugin for Persist information in browser storage
 
+####Library
 
+Bulma - CSS Styling Library
+Buefy - Styling Library for VueJS
+Fontawesome5 - Icon library for Buefy and Bulma
 
+####Authentication Service
+
+Google Firebase Auth
+
+####Backend
+
+Google Firebase - non-SQL Database for small scale app
 
 Demo: https://exor-ffdab.firebaseapp.com/login
 
