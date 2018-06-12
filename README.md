@@ -3,24 +3,24 @@
 > A Vue.js project
 
 ## Technology Used
-####Frameworks
+###Frameworks
 
 VueJS - Progressive Framework
 Vue Router - Router for Vue
 Vuex - VueJS Central State Management
 Vuex-PersistedState - Vuex plugin for Persist information in browser storage
 
-####Library
+###Library
 
 Bulma - CSS Styling Library
 Buefy - Styling Library for VueJS
 Fontawesome5 - Icon library for Buefy and Bulma
 
-####Authentication Service
+###Authentication Service
 
 Google Firebase Auth
 
-####Backend
+###Backend
 
 Google Firebase - non-SQL Database for small scale app
 
