@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+Demo: https://exor-ffdab.firebaseapp.com/login
+
 ## Build Setup
 
 ``` bash
