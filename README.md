@@ -36,8 +36,7 @@ Google Firebase Auth
 Google Firebase - non-SQL Database for small scale app
 
 ##Demo
-https://exor-ffdab.firebaseapp.com/login
-
+https://exor-ffdab.firebaseapp.com
 ## Build Setup
 
 ``` bash
